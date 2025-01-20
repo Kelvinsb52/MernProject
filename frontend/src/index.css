@@ -1,0 +1,75 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+    --primary: #1aac83; /* Primary color */
+    --error: #ff7195;  /* Fixed invalid hex code (#7195 is too short) */
+}
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-family: "Poppins", sans-serif; /* Added fallback font */
+}
+
+header {
+    background: #fff;
+}
+
+header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+.pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* WorkoutDetails Card Styling */
+.workout-details {
+    background: #ffffff; /* White card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Longer width */
+    padding: 20px 30px; /* Add inner spacing */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align content to the left */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+/* Title Styling */
+.workout-details h4 {
+    font-size: 1.5rem; /* Slightly larger font for title */
+    color: #1aac83; /* Use the primary color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Text Styling */
+.workout-details p {
+    font-size: 1rem; /* Standard font size for content */
+    color: #555; /* Subtle gray for text */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Strong Text Styling */
+.workout-details strong {
+    color: #333; /* Slightly darker for emphasis */
+}
+
+/* Hover Effect for Card */
+.workout-details:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
