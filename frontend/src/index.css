@@ -36,14 +36,21 @@ header a {
     margin: 0 auto;
 }
 
+.home{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+}
+
 /* WorkoutDetails Card Styling */
 .workout-details {
     background: #ffffff; /* White card background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px; /* Longer width */
-    padding: 20px 30px; /* Add inner spacing */
+    max-width: 1000px; /* Longer width */
+    padding: 0px 30px; /* Add inner spacing */
     display: flex;
+    margin: 20px auto;
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align content to the left */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
@@ -72,4 +79,39 @@ header a {
 .workout-details:hover {
     transform: translateY(-5px); /* Lift the card slightly */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Workout Form */
+label, input{
+    display: block;
+}
+input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form button{
+    background: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+}
+div.error{
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+input.error{
+    border: 1px solid var(--error);
 }
