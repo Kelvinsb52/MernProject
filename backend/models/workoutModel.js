@@ -23,7 +23,7 @@ const workoutSchema = new Schema
     user_id:
     {
         type: String,
-        retuired: true
+        required: true
     }
 }, { timestamps: true })
 
